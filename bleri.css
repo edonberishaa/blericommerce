@@ -8,7 +8,8 @@ font-family: 'Open Sans', sans-serif;
 }
 body{
     background: rgb(38,63,84);
-    background: radial-gradient(circle, rgba(38,63,84,1) 0%, rgba(26,70,28,1) 61%);}
+    background: radial-gradient(circle, rgba(38,63,84,1) 6%, rgba(37,59,38,1) 97%);
+}
 header{
     width: 100%;
     border-bottom: 1px solid grey;
