@@ -9,7 +9,7 @@ font-family: 'Open Sans', sans-serif;
 body{
     margin: 0;
     background: rgb(38,63,84);
-    background: radial-gradient(circle, rgba(38,63,84,1) 0%, rgba(26,70,28,1) 61%);}
+    background: radial-gradient(circle, rgba(38,63,84,1) 6%, rgba(37,59,38,1) 97%);}
 header{
     width: 100%;
     border-bottom: 1px solid grey;
@@ -94,13 +94,13 @@ h3{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 50px 0px;
 
 }
 .content{
-    width: 30%;
+    width: 27%;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -109,14 +109,14 @@ h3{
     padding-top: 10px;
     box-shadow: 0 15px 28px rgba(0,0,0,0.25);
     transition: .4s;
-    background-color: #1f2c24;
+    background-color: transparent;
 }
 .content:hover{
     transform: translate(0px,-5px);
 }
 img.imazhi{
     width: 200px;
-    height: 210px;
+    height: 205px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -168,7 +168,8 @@ margin-bottom: 5px;
 border-radius: 10px;
 }
 .buy-1{
-    background: #092d07;
+    background: black;
+    padding: 10px;
 }
 #container0{
     padding: 120px;
@@ -176,7 +177,25 @@ border-radius: 10px;
     justify-content: center;
     align-items: center;
 }
-#container0 .card-header{
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+#container1 .card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 48px;
+    font-weight: bold;
+    color: wheat;
+    filter: drop-shadow(2px 0px 0px #fff);
+}
+    
+    #container0 .card-header{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,8 +208,7 @@ border-radius: 10px;
 .bleri1{
     align-items: center;
 }
-#smoki0{
-    margin-top: 10%;
+#smoki0,#qokollata0{
 }
 
 
@@ -210,5 +228,30 @@ border-radius: 10px;
 @media(max-width:750px){
     .content{
         width: 100%;
+    }
+}
+@media screen and (min-width:320px) {
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+   #container1 .card-header{
+        font-size: 25px;
+    }
+    #container0 .card-header{
+        font-size: 27px;
+    }
+    .search-button{
+        display: inline;
+        position: relative;
+        margin-top: 10px;
+    }
+    #container1{
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
