@@ -73,6 +73,23 @@ footer a{
 footer a:hover{
     color: goldenrod;
 }
+
+.wrapper video{
+    width: 100%;
+}
+.wrapper1 h1{
+    font-family: Poppins;
+    width: 100%;
+    font-size: 70px ;
+    color: wheat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-weight: 900;
+    height: 90vh;
+}
 .search-bar:focus,
 .search-button:focus {
   outline: none;
@@ -171,6 +188,12 @@ border-radius: 10px;
     background: black;
     padding: 10px;
 }
+.container .card-header{
+    animation: slide-out 10s;
+    animation-delay: 2000ms;
+    animation-iteration-count: infinite;
+
+}
 #container0{
     padding: 120px;
     display: flex;
@@ -210,15 +233,61 @@ border-radius: 10px;
 }
 #smoki0,#qokollata0{
 }
+.logo img {
+    animation: spin 15s linear infinite; /* You can adjust the duration and other properties */
+}  
+.wrapper1 h1{
+    animation: slide-in 3000ms;
+    animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+}
 
 
+@keyframes slide-out{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    10%{
+        transform: scale(1);
+    }
+    from {
+        opacity: 0.25;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+      transform: translateX(-40%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+      color: #7eed78;
+    }
+  }
 
+  /* @keyframes slide-out {
+    from {
+      transform: translateX(-40%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+      color: #7eed78;
+    }
+  } */
 
-
-
-
-
-
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 @media(max-width:1000px){
     .content{
@@ -250,6 +319,9 @@ border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .wrapper1 h1{
+        display: none;
     }
     .logo{
         width: 100%;
